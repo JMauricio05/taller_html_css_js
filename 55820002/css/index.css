@@ -1,0 +1,14 @@
+.header-title {
+    background-color: rgb(255 255 255 / 80%);
+    width: 416px !important;
+    border: 2px solid #f99b1d;
+    border-radius: 15px;
+    color: #f99b1d;
+    box-shadow: 3px 2px 8px 5px rgb(125 125 125 / 69%);
+}
+
+.header-title:hover {
+    color: red;
+    box-shadow: 0px 1px 4px 5px rgb(58 58 58 / 69%);
+    border-color: red;
+}

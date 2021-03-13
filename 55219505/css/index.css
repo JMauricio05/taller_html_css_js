@@ -1,0 +1,14 @@
+.header-text2{
+   
+    font-weight: normal;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.header-text{
+    display: flex;
+
+}

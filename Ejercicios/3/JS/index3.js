@@ -1,4 +1,4 @@
-function varificar(obj){
+function edad(obj){
 
     var valoresAceptados = /^[.,0-9]+$/;
 

@@ -1,3 +1,8 @@
+.body{
+    background-color: rgb(255, 238, 238);
+}
+
+
 .header-text2{
    
     font-weight: normal;
@@ -7,18 +12,25 @@
     justify-content: space-between;
     margin-left: 15%;
     margin-right: 15%;
+    margin-top: 50px;
 }
 .header-text{
     display: flex;
 
 }
 .menu{
-    margin-top: 15px;
+    margin-top: 50px;
     margin-left: 30%;  
     margin-right: 30%;
     
+
+    
+}
+.fila{
+    color: black;
 }
 table{
+    
     width: 100%;
     border-spacing: 20px;
 }

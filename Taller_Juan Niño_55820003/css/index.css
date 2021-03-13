@@ -1,0 +1,44 @@
+.headerYo{
+    display: flex;
+    position: relative;
+    width: 1000px;
+    height: 200px;
+    background-color: cadetblue;
+    border-radius: 20px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.nombreYo{
+    position:absolute;
+    left: 20%;
+    top: 6%;
+}
+.codigoYo{
+    position:absolute;
+    left: 65%;
+}
+.numYo{
+    position:absolute;
+    left: 80%;
+    top: 6%;
+}
+.repo_Yo{
+    position:absolute;
+    top: 69%;
+    left: 5%;
+}
+.nomRepo{
+    position:absolute;
+    top: 75%;
+    left: 25%;
+}
+.BodyPage{
+    position: relative;
+    border-radius: 20px;
+    width: 1000px;
+    height: 500px;
+    background-color: beige;
+}
+.tablaMaterias{
+    border-radius: 50px;
+    width: 800px;
+}

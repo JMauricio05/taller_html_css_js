@@ -18,10 +18,9 @@ function promedio(obj, notaf){
             document.getElementById("idnota").innerText = ' SU NOTA ES: '+notaf.toFixed(1);
         }
         if (nombress == ""){
-            document.getElementById("charNum").innerText = 'DIGITA TU NOMBRE Y NOTAS';
+            document.getElementById("charNum").innerText = 'MATERIA: '+materiaa+ ' NOTAS: '+nota1+','+nota2+','+nota3;
         }
         if (materiaa == ""){
-            document.getElementById("charNum").innerText = 'DIGITA TU MATERIA Y NOTAS';
+            document.getElementById("charNum").innerText = 'NOMBRE: '+nombress+ ' NOTAS: '+nota1+','+nota2+','+nota3;
         }
-
     }

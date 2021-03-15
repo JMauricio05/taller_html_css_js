@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 3</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+
+    <body>
+        <br><br>
+        <div class="container-fluid">
+            <header class="row">
+                <h1 class="col-12 text-center">Aplicación para verificar la edad</h1>
+            </header>
+            <br><br>
+            <div id="bodyPage" class="row justify-content-center">
+                <div class="col-8">
+                    <div class="row">
+                        <h2 class="col-8">Persona</h2>
+                        <div class="col-4 text-end">
+                            <button id="btnRegistrar" type="button" class="btn btn-primary">Registrar persona</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <table id="tablaPersonas" class="col-12 table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th class="thNo">#</th>
+                                    <th class="thNombre">Nombre</th>
+                                    <th class="thEdad">Edad</th>
+                                    <th class="thOpciones">Opciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="4" class="text-center">No hay personas registradas</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 text-end">
+                            <button id="btnCalcular" type="button" class="btn btn-primary">Calcular Edad</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div id="modalFormulario" class="modalContent modalClosed">
+            <div class="container-fluid">
+                <button type="button" class="btn-close" aria-label="Close" onclick="closeModal('modalFormulario')"></button>
+                <div class="row">
+                    <h2 id="tituloModalFormulario" class="col-12 text-center">Registro persona</h2>
+                </div>
+                <div class="row justify-content-center">
+                    <form id="formPersona" class="col-8">
+                        <div class="mb-3">
+                            <label for="nombreInput" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombreInput" name="nombreInput" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="edadInput" class="form-label">Edad</label>
+                            <input type="text" class="form-control" id="edadInput" name="edadInput" required>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-12 text-center">
+                                <button type="button" class="btn btn-secondary"
+                                onclick="closeModal('modalFormulario')">Cancelar</button>
+                                <button type="submit" class="btn btn-success">Aceptar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="modalPromedio" class="modalContent modalClosed">
+            <div class="container-fluid">
+                <button type="button" class="btn-close" aria-label="Close" onclick="closeModal('modalPromedio')"></button>
+                <div class="row">
+                    <h2 class="col-12 text-center">Persona</h2>
+                </div>
+                <br>
+                <div class="row justify-content-center">
+                    <div class="col-8 text-center">
+                        <label for="escoje" class="form-label">Escriba el número de la persona</label>
+                        <input type="text" class="form-control" id="escoje" name="escoje" required>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8 text-center">
+                        La edad de la persona es:
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8 text-center">
+                        <input class="resultNombre" type="text" name="Resul_promedio" id="Resul_promedio" disabled>
+                    </div>
+                </div>
+                <br>
+                <div class="row justify-content-center">
+                    <div class="col-4 text-center">
+                        <button type="button" class="btn btn-success" id="btnCalcularpromedio">Inicio</button>
+                        <br></br>
+                        <button type="button" class="btn btn-success" onclick="closeModal('modalPromedio')">Aceptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+        <script src="Js/index.js"></script>
+    </body>
+
+</html>

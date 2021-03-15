@@ -7,13 +7,13 @@
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
 
-    <title>Ejercicio6</title>
+    <title>Ejercicio8</title>
 
     <link rel="stylesheet" href="CSS/bootstrap.css" media="screen">
-    <link rel="stylesheet" href="CSS/Ejercicio6.css" media="screen">
+    <link rel="stylesheet" href="CSS/Ejercicio8.css" media="screen">
     <meta name="generator" content="Stevenorduz">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
     
     <meta property="og:title" content="Ejercicio1">
     <meta property="og:type" content="website">
@@ -36,40 +36,25 @@
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-container-style u-expanded-width u-group u-palette-2-base u-shape-rectangle u-group-1">
           <div class="u-container-layout u-container-layout-1">
-            <h3 class="u-align-center u-text u-text-1">EJERCICIO 6</h3>
+            <h3 class="u-align-center u-text u-text-1">EJERCICIO 8</h3>
           </div>
         </div>
-        <h1 class="u-align-center u-text u-text-2">BUSCADOR</h1>
+        <h1 class="u-align-center u-text u-text-2">Par e Impar</h1>
       </div>
     </section>
   
     <section class="u-clearfix u-section-3" id="sec-1c98">
-      <div class="u-clearfix u-sheet u-sheet-1">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <div class="u-form u-form-1">
           <form action="#" method="POST" class="u-clearfix u-form-spacing-29 u-form-vertical u-inner-form" style="padding: 11px;" source="custom" name="form">
-            <div class="u-form-group u-form-group-1">
-              <label for="text-98e4" class="u-label">Texto a buscar:</label>
-              <input type="text" placeholder="" id="idbuscar" name="text" class="u-border-1 u-border-black u-input u-input-rectangle u-palette-2-base u-radius-28 u-input-1"onkeyup="buscar(this);">
-            </div>
             <div class="u-form-group u-form-group-2">
-              <label for="textarea-5f6d" class="u-label">Parrafo:</label>
-              <textarea placeholder="" rows="4" cols="50" id="idparrafo" name="textarea" class="u-border-1 u-border-black u-input u-input-rectangle u-palette-2-base u-radius-28 u-input-2"onkeyup="buscar(this);"></textarea>
-            </div>
-            <div class="u-align-center u-form-group u-form-submit">
-              <a href="#" class="u-btn u-btn-round u-btn-submit u-button-style u-hover-palette-1-dark-1 u-palette-2-base u-radius-20 u-btn-1">BUSCAR</a>
-              <input type="button" id="miboton" onclick="buscar()" class="u-form-control-hidden">
+              <label for="text-98e4" class="u-label">Numeros:</label>
+              <textarea type="number" placeholder="" rows="4" cols="50" id="idnumero" name="message" class="u-border-1 u-border-black u-input u-input-rectangle u-palette-2-base u-radius-28 u-input-1" required=""onkeyup="parimpar(this);"></textarea>
             </div>
           </form>
         </div>
-        <div class="u-form u-form-2">
-          <form action="#" method="POST" class="u-clearfix u-form-spacing-29 u-form-vertical u-inner-form" style="padding: 11px;" source="custom" name="form">
-            <div class="u-form-group u-form-group-4">
-              <label for="textarea-3a2c" class="u-label">Busqueda:</label>
-              <textarea placeholder="" rows="4" cols="50" id="idfinal" name="textarea" class="u-border-2 u-border-black u-input u-input-rectangle u-radius-18 u-white u-input-3"onkeyup="buscar(this);"></textarea>
-            </div>
-          </form>
-        </div>
-        <h2 class="u-align-center u-text u-text-1">CARACTERES</h2>
+        <h2 class="u-align-center u-text u-text-1" id="par">NUMEROS PARES</h2>
+        <h2 class="u-align-center u-text u-text-1" id="impar">NUMEROS IMPARES</h2>
       </div>
     </section>
 
@@ -81,6 +66,6 @@
         </div>
     </footer>
 
-    <script src="JS/index6.js"></script>
+    <script src="JS/index8.js"></script>
   </body>
 </html>

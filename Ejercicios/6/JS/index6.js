@@ -1,16 +1,30 @@
-function texto(obj){
+function buscar(obj){
 
-    var expression = document.getElementById("datos").innerText;
-    var cadena = document.getElementById("parrafo1").innerText;
+    var buscar = document.getElementById("idbuscar").value;
+    var parrafo  = document.getElementById("idparrafo").value;
+    var final = document.getElementById("idfinal").value;
+    
+    var keywords = [parrafo.toString()];
+    var pos = -1;
 
+    let template =`<span style="background:yellow; color:red;">${buscar}</span>`;
 
-    var index = cadena.search(expression);
+    // uso foreach para recorrer cada elemento del array
+    keywords.forEach(function(element){
 
-    if(index >= 0) {
-    document.getElementById("charNum").innerText = 'la palabra existe dentro de la cadena y se encuentra en la posición '+ index;
+    //en caso de existir se asigna la posicion
+    pos = buscar.search(element.toString());
+    
+    document.getElementById("idfinal").innerHTML = parrafo;
+    //si existe
+     if(pos!=1){
+        document.getElementById('idbuscar').style.color = "red";        
+    }  
+    });
+
+    //en caso de que no exista
+    if(pos===-1 && resultado===""){
+        document.getElementById('idbuscar').style.color = "green";
     }
-        else{
-        document.getElementById("charNum").innerText = 'la palabra no existe dentro de la cadena';
-        }
 
 }

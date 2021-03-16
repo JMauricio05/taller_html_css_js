@@ -1,31 +1,32 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="es">
 <head>
     <title>Ejercicio 1</title>
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
-    <meta name="viewport" content="width-device-width, initial-scale-1,
-    shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <nav class="navbar bg-success">
-        <ul class="list-inline">
-            <li class="list-inlin-tem">
-                <h3 class="text-white">CONTADOR DE CARACTERES</h3>
-            </li>
-        </ul>
-    </nav>
-    <div class="container">
-        <div class="row mt-5">
-            <div class="col-lg-6">
-                <textarea placeholder="Ingrese el texto" class="form-control" id="txt"></textarea>
-            </div>
-            <div class="col-lg-6">
-                <div id="txtVista"></div>
-            </div>
-        </div>
-    </div>
-    <script> type="text/javascript" ="index.js"</script>
+    
+    <h3>Contador de Caracteres: </h3>
+    <textarea id="areaTexto" cols="80" rows="10">
+    </textarea>
+    <p>Caracteres</p>
+    <p id="contador">0</p>
+    
+
+    <script type="text/javascript">
+    
+	var areaTexto = document.getElementById('areaTexto');
+	var contador = document.getElementById('contador');
+
+	areaTexto.oninput = function (){
+		var quantidade = areaTexto.value.length;
+		contador.innerHTML = quantidade;
+	}
+
+    </script>
 </body>
 </html>

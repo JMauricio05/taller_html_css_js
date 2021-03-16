@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ejercicio 4</title>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script>
+        let nombre
+        let materia
+        let nota1
+        let nota2
+        let nota3
+        let notafinal
+        let suma
+
+        nombre=prompt("introduzca su nombre:")
+        materia=prompt("introduzca su materia:")
+        nota1=prompt("introduzca su nota:")
+        nota2=prompt("introduzca su nota:")
+        nota3=prompt("introduzca su nota:")
+        
+        suma = parseFloat(nota1) +parseFloat(nota2) + parseFloat(nota3)
+        notafinal = suma/3 
+        if(notafinal < 3){
+            document.write("Lo siento "+ nombre+ " su nota es "+ notafinal + ", no pasaste la materia de " + materia);
+        }
+        if(notafinal >= 3 ){
+            document.write("Felicitaciones "+ nombre + " su nota es "+ notafinal + ", pasaste la materia de " + materia);
+         }
+    </script>
+</body>
+</html>

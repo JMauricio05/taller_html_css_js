@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name= "Taller Programación Avanzada" content="Ejercisios propuestos y resueltos en la clase de Programacion Avanzada, Grupo 1 de la Universidad de Boyacá"> 
-    <title>Programación</title>
+    <title>Taller Programación</title>
     <link rel="stylesheet" href="Style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -22,10 +22,97 @@
         <div id="Body" class="row justify-content-center">
             <div class="col-8">
                 <div class="row">
-                    <h2 class="col-8">Ejercisios</h2>
+                    <h2 class="col-8">Ejercicio</h2>
                 </div>
             </div>
+            <br></br>
+            <div id="Ejercisios" class="slidershow justify-content">
+                <div class="slides">
+                    <input type="radio" name="r" id="r1" checked>
+                    <input type="radio" name="r" id="r2">
+                    <input type="radio" name="r" id="r3">
+                    <input type="radio" name="r" id="r4">
+                    <input type="radio" name="r" id="r5">
+                    <input type="radio" name="r" id="r6">
+                    <input type="radio" name="r" id="r7">
+                    <input type="radio" name="r" id="r8">
+                    <input type="radio" name="r" id="r9">
+                        <div class="slide s1 justify-content col-12" id="Ej1">
+                            <h2 class="col-12">Contador de Caracteres</h2>
+                            <h3 class="col-5">
+                                <label for="TextoImput" class="Ingresa"><h5>Ingrese un texto:</h5></label>
+                                <input type="text" class="form-control" onkeyup="ContarCaracter(this);" id="TextoIngresado" name="Texto1"required>
+                                <h5 class="row justify-content">El numero de caracteres es:</h5>
+                                <h5 class="row justify-content-center" id="numCaracter"></h5> 
+                            </h3>
+                        </div>
+                        <div class="slide justify-content col-12" >
+                            <h2 class="col-12">Identificador tipo de dato</h2>
+                            <h3 class="col-5">
+                                <label for="TextoImput" class="form label" id="tiptxt"><h5>Ingrese una palabra o numero:</h5></label>
+                                <input type="text" class="form-control" onkeyup="Identcar(this)" id="PalabraIngr" name="Texto2"required>
+                                <h5 class="row justify-content">El dato ingresado es de tipo:</h5>
+                                <h5 class="row justify-content-center" id="Tiptxt"></h5>
+                            </h3>
+                        </div>
+                        <div class="slide justify-content col-12">                    
+                            <h2 class="col-12">Eres mayor de edad?</h2>
+                            <h3 class="col-6">
+                                <label for="TextoImput" class="form label"><h5>Ingresa tu nombre:</h5></label>
+                                <input type="text" class="form-control" id="NombreUs" name="nom"required>
+                                <label for="TextoImput" class="form label"><h5>Ingresa tu edad:</h5></label>  
+                                <input type="text" class="form-control" id="EdadUs" name="edad"required>
+                            </h3>
+                        </div>
+                        <div class="slide justify-content col-12">
+                            <h2 class="col-12">Aprovar o Suspender</h2>
+                            
+                        </div>
+                        <div class="slide justify-content col-12">
+                            <h2 class="col-12">Identifir Pares o Impares</h2>
+                            
+                        </div>
+                        <div class="slide justify-content col-12">
+                            <h2 class="col-12">Similitud en texto</h2>
+                            
+                        </div>
+                        <div class="slide justify-content col-12">
+                            <h2 class="col-12">Divisivilidad entre numeros</h2>
+                            <h3 class="col-5">
+                                <label for="numdivs1" class="form label"><h5>Ingrese el primer valor</h5></label>
+                                <input type="text" class="form control" onkeyup="Num1(this);" id="CadenaNum" required>
+                                <label for="numdivs2" class="form label">Ingrese el segundo valor</label>
+                                <input type="text" class="form control" onkeyup="Num2(this);" id="CadenaNum" required>
+                                <button id="btndiv" type="button" class="btn btn">Aplicar</button>
+                                <p class="row justify-content-center" id=divsr>Resultado</p>
+                            </h3>
+                        </div>
+                        <div class="slide justify-content col-12">
+                            <h2 class="col-12">Lista Pares e Impares</h2>
+                            
+                        </div>
+                </div>
+                
+            </div>
+            <div class="col-8">
+                <h5 class="row justify-content-center">Selecione el ejercisio</h5>
+            </div>
+            <div class="navegacion row justify-content-center">
+                <label for="r1" class="bar"></label>
+                <label for="r2" class="bar"></label>
+                <label for="r3" class="bar"></label>
+                <label for="r4" class="bar"></label>
+                <label for="r5" class="bar"></label>
+                <label for="r6" class="bar"></label>
+                <label for="r7" class="bar"></label>
+                <label for="r8" class="bar"></label>
+            </div>
+            <h3 class="NomCod col-12">Mairon Ramires - 55820005</h3>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

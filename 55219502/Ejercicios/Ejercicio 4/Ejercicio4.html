@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Ejercicio 4/Ejercicio4.css">
+</head>
+<body class="body"> 
+    <h1>Promedio materia</h1>
+    <br>
+    <div class="container">
+        <div class="mb-3">
+            <label for="nombre" class="form-label " style="padding-bottom: 5px ;">Digite su nombre</label>
+            <input type="text" class="form-control" id="nombre" placeholder="nombre">
+        </div>
+        <div class="mb-3">
+            <label for="nombreM" class="form-label " style="padding-bottom: 5px ;">Digite el nombre de la materia</label>
+            <input type="text" class="form-control" id="nombreM" placeholder="materia">
+        </div>
+
+        <div class="nota1" style="display: flex;">
+            <label for="nombretxt" class="form-label " style="padding-bottom: 5px ;">Nota 1</label>
+            <input type="number" class="form-control" id="nota1" placeholder="0" style="width: 100px; height: 30px; margin-left: 10px;">
+        </div>
+
+        <div class="nota2" style="display: flex;">
+            <label for="nombretxt" class="form-label " style="padding-bottom: 5px ;">Nota 2</label>
+            <input type="number" class="form-control" id="nota2" placeholder="0" style="width: 100px; height: 30px; margin-left: 10px;">
+        </div>
+        <div class="nota3" style="display: flex;">
+            <label for="nombretxt" class="form-label " style="padding-bottom: 5px ;">Nota 3</label>
+            <input type="number" class="form-control" id="nota3" placeholder="0" style="width: 100px; height: 30px; margin-left: 10px;">
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <button id="btn-cal" type="submit" class="btn btn-success">Calcular</button>
+            </div>
+        </div>
+    </div>
+    <div>   
+
+    </div>
+    <div id="modalPromedio" class="modalContent modalClosed">
+        <div class="container-fluid">
+            <button type="button" class="btn-close" aria-label="Close" onclick="closeModal('modalPromedio')"></button>
+            <div class="row">
+                <h2 class="col-12 text-center">Edad </h2>
+            </div>
+            <br>
+            <div class="row justify-content-center">
+                <div class="col-8 text-center">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div id="carac" class="col-8 text-center">
+                    0
+                </div>
+                <div id="carac2" class="col-8 text-center">
+
+                </div>
+                <div id="carac3" class="col-8 text-center">
+
+                </div>
+            </div>
+            <br>
+            <div class="row justify-content-center">
+                <div class="col-4 text-center">
+                    <button  type="button" class="btn btn-success" onclick="closeModal('modalPromedio')">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../Ejercicio 4/Ejercicio4.js"> </script>
+</body>
+</html>

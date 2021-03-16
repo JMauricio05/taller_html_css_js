@@ -119,7 +119,9 @@ document.getElementById('btnCalcularpromedio').addEventListener('click', functio
     promedio=promedio/3;
     console.log(promedio);
     if (promedio >= 3) {
-        document.getElementById('Resul_promedio').value="Felicitaciones "+ personas[i].nombre+ " su nota es " + promedio + 
+        let promedioP =" su nota es " + promedio;
+        promedioP.style.color= 'green'
+        document.getElementById('Resul_promedio').value="Felicitaciones "+ personas[i].nombre + promedioP  + 
         " \npasaste la materia "+ personas[i].materia;
     } else {
         document.getElementById('Resul_promedio').value="Lo siento "+ personas[i].nombre+ " su nota es " + promedio + 

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 7</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body style="margin-left: 5%; margin-top: 2%; margin-right: 5%;">
+        <div>
+            <br></br>
+        <header class="row">
+            <h1 class="col-12 text-center">Aplicación para saber si un número es divisible en otro</h1>
+        </header>
+        <br></br>
+        <div class="BodyPage">
+            <div class="row">
+                <table id="tablaMaterias" class="col-12 table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th class="thEjercicio text-center">Ingrese el Número 1</th>
+                            <th class="thEnlace text-center">Ingrese el Número 2:</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="1 " class="text-center"><input type="text" class="form-control" id="numero1Input" name="numero1Input" required></td>
+                            <td colspan="1" class="text-center"><input type="text" class="form-control" name="numero2Input" id="numero2Input" required></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="row">
+                    <div class="col-12 text-end">
+                        <button id="btnInicio" type="button" class="btn btn-primary">Inicio</button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="modalPromedio" class="modalContent modalClosed">
+                <div class="container-fluid">
+                            <div class="row">
+                                <h2 class="col-12 text-center">Numeros</h2>
+                            </div>
+                            <br>
+                        <div class="row justify-content-center">
+                            <div class="col-8 text-center">
+                            Los números son:
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-8 text-center">
+                                <textarea class="resultNombre" type="text" name="Resul_numeros" id="Resul_numeros" disabled></textarea>
+                            </div>
+                        </div>
+                        <br>   
+                </div>
+            </div>
+        </div>
+        
+
+        </div>
+        
+
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script src="Js/index.js"></script>
+    </body>
+</html>

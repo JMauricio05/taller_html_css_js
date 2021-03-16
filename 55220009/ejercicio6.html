@@ -8,6 +8,21 @@
     <body>
         <h1>Ejercicio6</h1>
 
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <label> Ingrese su texto:</label>
+                    <input type="text" class="form-control" name="texto" id="txtId" required>
+                </div>
+                <div class="col-lg-12">
+                    <label> Ingrese la palabra que desea buscar:</label>
+                    <input type="text" class="form-control" name="buscar" id="buscarId" required>
+                </div>
+                <div class="col-12">
+                    <button type="button" class="btn btn-primary" onclick="buscar()">Buscar</button>
+                    <div id="encontrar"></div>
+                </div>
+
     </body>
 
 </html>

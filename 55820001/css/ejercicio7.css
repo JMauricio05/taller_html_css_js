@@ -1,0 +1,32 @@
+*{
+  
+    background-color: bisque;
+   
+}  
+
+.txtVista{
+margin-top: 5%;
+padding: 2rem;
+color: #000;
+background-color: #eee;
+font-weight: bold;
+border-radius: 10px;
+font-size: 20px;
+width: 19%;
+
+}
+
+body{
+    margin-left: 40%;   
+}
+
+h3{
+    margin-left: 8%;
+}
+h2{
+    margin-left: -23%;
+}
+.button_add{
+    margin-left: 9%;
+}
+

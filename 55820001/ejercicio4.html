@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ejercicio 4</title>
+    <link rel="stylesheet" href="css/ejercicio4.css">
+</head>
+
+<body>
+
+  
+    
+    
+    <nav class="navegation">
+        <ul class="list_inline">
+
+            <h2 class="title">Averigua si pasas la materia</h2>
+        </ul>
+
+    </nav>
+
+    <div class="container">
+
+        <div class="text_box">
+            <h3 class="title">Nombre</h3>
+            <textarea  name="message" onkeyup="countName(this);" id="text" cols="30" rows="2"></textarea>
+        </div>
+
+        <div class="text_box">
+            <h3 class="title">Materia</h3>
+            <textarea  name="message" onkeyup="countCourse(this);" id="text" cols="30" rows="2"></textarea>
+        </div>
+
+        <div class="text_box">
+            <h3 class="title">Nota 1</h3>
+            <textarea  name="message" onkeyup="countNote1(this);" id="text" cols="30" rows="2"></textarea>
+        </div>
+
+        <div class="text_box">
+            <h3 class="title">Nota 2</h3>
+            <textarea  name="message" onkeyup="countNote2(this);" id="text" cols="30" rows="2"></textarea>
+        </div>
+
+        <div class="text_box">
+            <h3 class="title">Nota 3</h3>
+            <textarea  name="message" onkeyup="countNote3(this);" id="text" cols="30" rows="2"></textarea>
+        </div>
+
+        
+
+        <div class="button_add">
+            <button  onclick="press(this)" id="button_add">Revisar</button>
+        </div>
+
+
+        <div>
+            <p class="txtVista" id="character_num"> Resultado </p>
+        </div>
+
+    </div>
+    <script src="js/ejercicio4.js"></script>
+</body>
+
+
+</html>

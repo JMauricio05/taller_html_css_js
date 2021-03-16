@@ -1,0 +1,17 @@
+table {
+    width: 50%;
+    border: 2px solid;
+    border-radius: 12px;
+    border-spacing: 15px;
+    background-color: lightgray;
+}
+
+table tbody th{
+    text-align: center;
+}
+
+table tbody tr td{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}   

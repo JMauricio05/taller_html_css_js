@@ -1,38 +1,37 @@
+body{
+    background-color: #0000ff59;
+}
+.body-style{
+    margin-left: 15%; 
+    margin-right: 15%;
+}
 .hader{
     display: flex; flex-direction: row;
 }
-.estudiante-name{
+.estudiante{
     display: flex; 
     flex-direction: row;
     width: 50%;
     justify-content: end;
+    font-family: cursive;
 }
-
-.estudiante-codigo{
-    display: flex; 
-    flex-direction: row;
-    width: 50%;
-    justify-content: center;
+.code{
+    justify-content: flex-end;
 }
-.estudiante-name .name{
+.estudiante .nombre{
     font-weight: normal;
 }
-.estudiante-codigo .codigo{
+.estudiante .codigo{
     font-weight: normal;
 }
-.estudiante-repos{
-    display: flex; 
-    flex-direction: row;
-    width: 100%;
-    justify-content: end;
-}
-.estudiante-repos .repos{
+.estudiante .repositorio{
     font-weight: normal;
 }
 .body-table{
     background-color: white;
     box-shadow: 1px 1px 5px 1px black;
     border-radius: 10px;
+    font-family: cursive;
 }
 table{
     width: 100%;

@@ -9,10 +9,11 @@ let numero=document.getElementById('resul');
 let promedio=(Number(nota1)+Number(nota2)+Number(nota3))/3;
 
 if (Number(promedio)<3){
-
-    numero.innerText="Hola "+cadena+", Su nota es "+promedio+", perdiste "+materia;
+    document.getElementById('resul').classList.add('color1')
+    numero.innerHTML="Hola "+cadena+", Su nota es <span>"+promedio.toFixed(2)+"</span>, perdiste "+materia;
 
 }else{
-    numero.innerText="Hola "+cadena+", Su nota es "+promedio+", Pasaste "+materia;
+    document.getElementById('resul').classList.add('color2')
+    numero.innerHTML="Hola "+cadena+", Su nota es <span>"+promedio.toFixed(2)+"</span>, Pasaste "+materia;
 }
 });

@@ -14,9 +14,6 @@
     width: 550px;
     padding: 20px;
 }
-.notas{
-    padding-right: 5px;
-}
 .modalContent {
     position: fixed;
     top: 0px;
@@ -49,10 +46,4 @@
 
 .modalClosed {
     display: none;
-}
-.colorV span{
-    color: green;
-}
-.colorR span{
-    color:red;
 }

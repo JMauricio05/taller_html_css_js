@@ -30,26 +30,14 @@ document.getElementById('btnCalcular').addEventListener('click', function () {
     let nota1 = document.getElementById('nota1Input').value;
     let nota2 = document.getElementById('nota2Input').value;
     let nota3 = document.getElementById('nota3Input').value;
-    let bodyResultado1 = document.getElementById('cadenaResult1');
-    let bodyResultado2 = document.getElementById('cadenaResult2');
-    let bodyResultado3 = document.getElementById('cadenaResult3');
+    let bodyResultado = document.getElementById('cadenaResult');
     suma = Number(nota1)+Number(nota2)+Number(nota3);
     prom = suma/3;
     if(prom >= 3){
-        bodyResultado1.innerText = 'Felicitaciones '+nombre+',<span> su nota es <span>'+prom.toFixed(2)+',pasaste la materia '+materia;
-        //bodyResultado2.innerText = 
-        //bodyResultado3.innerText = 
-       // document.getElementById('cadenaResult2').classList.add('color1');
+        document.getElementById('divResult').classList.add('colorV');
+        bodyResultado.innerHTML = 'Felicitaciones '+nombre+',<span> su nota es '+prom.toFixed(2)+'</span>,pasaste la materia '+materia;
     }else if(prom < 3){
-        bodyResultado1.innerText = 'Lo siento '+nombre+',';
-        bodyResultado2.innerText = ' su nota es '+prom.toFixed(2)+',';
-        bodyResultado3.innerText = 'No pasaste la materia '+materia;
-        document.getElementById('cadenaResult2').classList.add('color1');
-        document.getElementById('cadenaResult2').classList.add('color2');
+        document.getElementById('divResult').classList.add('colorR');
+        bodyResultado.innerHTML = 'Lo siento '+nombre+',<span> su nota es '+prom.toFixed(2)+'</span>,no pasaste la materia '+materia;
     }
-});
-
-document.getElementById('btnAceptar').addEventListener('click', function () {
-    document.getElementById('cadenaResult2').classList.remove('color1');
-    document.getElementById('cadenaResult2').classList.remove('color2');
 });

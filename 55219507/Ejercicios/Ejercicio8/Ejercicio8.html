@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ejercicio5</title>
-    <link rel="stylesheet" href="css/Ejercicio5.css">
+    <title>Ejercicio8</title>
+    <link rel="stylesheet" href="Css/Ejercicio8.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
 </head>
@@ -11,37 +11,42 @@
     <br>
     <br>
     <div class="content">
-        <h1>Identificador Pares e impares</h1>
+        <h1>¿Cuales son pares o impares?</h1>
         <div class="app">
             
             <form id="formProgram" class="col-8">
                 <div class="mb-3">
-                    <label for="palabraInput" class="form-label">Ingrese numero</label>
-                    <input type="number" class="form-control" id="palabraInput" name="palabraInput" required="">
-                </div>
-        
+                    <label for="nombreInput" class="form-label">Digite la lista de numeros</label>
+                    <input type="text" class="form-control" id="nombreInput" name="nombreInput" required="">
+                </div>        
                 <div class="row justify-content-center">
                     <div class="col-12 text-center">
-                        <button id="btnCalcular" type="button" class="btn btn-success">Identificar</button>
+                        <button id="btnIdentificar" type="button" class="btn btn-success">Identificar</button>
                     </div>
                 </div>
             </form>
+        </div>
+        <div id="modalResultado" class="modalContent modalClosed">
             <div class="container-fluid">
-                <div class="row justify-content-center">
-                    <div class="col-8 text-center" style="font-weight: bold;">
-                        El tipo de numero es:
-                    </div>
+                <button type="button" class="btn-close" aria-label="Close" onclick="closeModal('modalResultado')"></button>
+                <div class="row">
+                    <h2 class="col-12 text-center">Pares</h2>
                 </div>
                 <div class="row justify-content-center">
-                    <div id="caracteres" class="col-8 text-center">
-                        0
+                    <div id="resultadoLista" class="col-8 text-center">
+
+                    </div>
+                </div>
+                <br>
+                <div class="row justify-content-center">
+                    <div class="col-4 text-center">
+                        <button type="button" class="btn btn-success" onclick="closeModal('modalResultado')">Aceptar</button>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
-    <script src="js/Ejercicio5.js"></script>
+    <script src="js/Ejercicio8.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
 </html>

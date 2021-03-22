@@ -47,3 +47,12 @@
 .modalClosed {
     display: none;
 }
+.par{
+    color: blue
+}
+.impar{
+    color: green
+}
+.error{
+    color: red;
+}

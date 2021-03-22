@@ -3,6 +3,22 @@ function closeModal(id){
     document.getElementById('resultadoLista').innerHTML=" ";
 }
 
+function errores(numer){
+    let letras = /[a-zA-Z]/;
+    let num = letras.test(numer);
+    for(let a=0; a<numer.length;a++){
+                if(numer.charAt(a)=='.'){
+                    document.getElementById('resultadoLista').innerHTML+= '<h6 class = "error">'+numer+' no es un número entero</h6>';
+                    return false;
+                }
+    }
+    if(num){
+        document.getElementById('resultadoLista').innerHTML+= '<h6 class = "error">'+numer+' no es un número entero</h6>';
+        return false;
+    }else{
+        return true;
+    }
+}
 function identificarParImpar(){
 
     let listaNumeros = document.getElementById('nombreInput').value+',';
@@ -14,20 +30,23 @@ function identificarParImpar(){
         if(listaNumeros[i]!=","){
             numeros+=listaNumeros[i];
         }else{
-            if(numeros%2==0){
-                numPares.push(numeros);
-                console.log(numPares);
-                document.getElementById('resultadoLista').style.color = "blue";
-                document.getElementById('resultadoLista').innerHTML+= numPares+ " es numero par <br>";
-            }else{
-                numImpares.push(numeros);
-                console.log(numImpares);
-                document.getElementById('resultadoLista').style.color = "green";
-                document.getElementById('resultadoLista').innerHTML+= numImpares+" es numero impar <br>";
+            
+            let error = errores(numeros);
+            if(error){
+                if(numeros%2==0){
+                    numPares.push(numeros);
+                    
+                    document.getElementById('resultadoLista').innerHTML+= '<h6 class = "par">'+numPares+' es numero par</h6>';
+                }else{
+                    numImpares.push(numeros);
+                    
+                    document.getElementById('resultadoLista').innerHTML+= '<h6 class = "impar">'+numImpares+" es numero impar</h6>";
+                }
             }
             numImpares = [];
             numPares = [];
             numeros = '';
+            
         }
     }
 }

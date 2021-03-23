@@ -1,0 +1,69 @@
+body{
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 5%;
+    background-color: rgb(71, 0, 0);
+}
+
+hr{
+    border: black solid;
+}
+
+h2, h3, hr{
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: -8%;
+}
+
+.principal, .secundario{
+    color: white;
+    width: 108%;
+}
+
+.principal{
+    background-color: darkorange;
+}
+
+.secundario{
+    background-color: blue;
+}
+
+.txtVista{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 30%;
+}
+
+#contenedor {
+    background-color: lightgrey;
+    border: black solid;
+    text-align: center;
+}
+
+#enlace{
+    margin-right: 5%;
+    text-align: right;
+}
+
+#txt_input {
+    margin-left: auto;
+    margin-right: auto;
+    -moz-appearance: textarea-multiline;
+    -webkit-appearance: textarea;
+    border: 1px solid gray;
+    font: medium -moz-fixed;
+    font: -webkit-small-control;
+    height: 200px;
+    overflow: auto;
+    padding: 2px;
+    resize: both;
+    width: 350px;
+    background-color: white;
+    color: #000;
+
+}

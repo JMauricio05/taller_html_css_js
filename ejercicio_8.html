@@ -3,16 +3,30 @@
     <head>
         <meta charset="UTF-8">
         <title>Ejercicio #8</title>
-        <link rel="stylesheet" href="css/index_8.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" 
-        rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" 
-        crossorigin="anonymous">
+        <link rel="stylesheet" href="css/index_12.css">
     </head>
     <body>
-        <a href="index.html">Volver al Inicio</a>
+        <div id="contenedor">
+            <nav>
+                <ul>
+                    <h2 class="principal">Ejercicio 8</h2><hr>
+                    <h2 class="secundario">¿Los números son pares o impares?</h2>
+                </ul>
+            </nav>
+            <div>
+                <h4>Digite los números separados por comas</h4>
+                <p><textarea type="submit" name="numeros" id="input" cols="30" rows="3"></textarea></p>
+            </div>
+            <div>
+                <p><button  value="Calcular" id="submit" onclick="prueba(input)">Revisar </button></p>
+            </div>
+            <div>
+                <p id="output" class="txtVista" name="salida" contentEditable="true"> Tipo : </p>
+            </div>
+            <div id="enlace">
+                <a href="index.html">Volver al Inicio</a>
+            </div>
+        </div>
         <script src="js/index_8.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" 
-        crossorigin="anonymous"></script>
     </body>
 </html>

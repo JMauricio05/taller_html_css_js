@@ -4,13 +4,10 @@ document.getElementById('boton').addEventListener('click',function(){
     let numero=document.getElementById('resul');
     let numero2=document.getElementById('resul2');
     let divisiones = cadena.split(",");
-  
-
     console.log(divisiones);
-    
     let pares=[];
     let impares=[];
-
+    
     var i;
 
     for (i = 0; i < divisiones.length; i++) {

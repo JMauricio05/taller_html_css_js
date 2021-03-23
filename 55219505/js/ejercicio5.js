@@ -14,7 +14,7 @@ if(Number(cadena)<0){
         if (Number(cadena%2)==0){
             console.log(cadena);
             numero.innerText="El numero es par";
-        
+            
         }else{
             numero.innerText="El numero es impar";
         } 

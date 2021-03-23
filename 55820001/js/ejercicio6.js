@@ -1,37 +1,28 @@
-var search;
-var text;
+var txt;
+var indx;
+var res;
 
 
-
-
-function test(text_search,text){
-    
-console.log(" Texto: " + text.value + " | busqueda: " + text_search.value );
-
-prueba = "Santiago";
-
-console.log(prueba.lastIndexOf("a"))
-
-
+function test(text_search){
+  
+  
+  txt = document.getElementById('txt_input').textContent;
+  
+  search = text_search.value;
+     
+ res = txt.replaceAll(search,'<span style="color: red">$&</span>');
+ 
+ 
+ 
+ console.log("Texto: [" + txt+  "]" + "    |   Busqueda: [" + search +"]" +
+ "   |   Res: [" + res +"]");
+ 
+  
+var textAreaB = document.getElementById("txt_input");
+textAreaB.innerHTML  = res;
+  
+ 
+ 
 }
 
-
-
-function countSearch(text_search){
-    search = text_search.value;
-
-
-test(text_search);
-
-
-}
-
-
-function countText(texto){
-    text = texto.value;
-
-    //console.log("texto: "+text);
-}
-
-    
 

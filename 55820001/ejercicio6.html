@@ -7,9 +7,6 @@
 </head>
 
 <body>
-
-  
-    
     
     <nav class="navegation">
         <ul class="list_inline">
@@ -24,12 +21,14 @@
 
         <div>
             <h3 class="title">Texto</h3>
-            <textarea class="txtVista" onkeyup="countText(this);" id="character_num" rows="20"></textarea>
+            <div id="txt_input" name="texto"  contentEditable="true"></div>
+            <!--oninput="test(index)"-->
         </div>
+
 
         <div class="text_box">
             <h3 class="title"> Busqueda</h3>
-            <textarea  name="message" onkeyup="test(character_num,this);" id="text" cols="30" rows="3"></textarea>
+            <textarea  name="busqueda" onkeyup="test(this);" id="index" cols="35" rows="3"></textarea>
         </div>
 
     </div>

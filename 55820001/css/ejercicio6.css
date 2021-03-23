@@ -1,32 +1,37 @@
-*{
-  
-    background-color: bisque;
-   
-}  
-
-.txtVista{
-margin-top: 0%;
-padding: 1rem;
-color: #000;
-background-color: #eee;
-font-weight: bold;
-border-radius: 10px;
-font-size: 12px;
-width: 65%;
-margin-left: -20%;
-}
 
 body{
     margin-left: 40%;   
+    background: #27282e; 
 }
 
 h3{
-    margin-left: 9%;
+    margin-left: 11%;
+    color: #eee;
 }
 h2{
     margin-left: -4%;
+    color: #eee;
 }
 .button_add{
     margin-left: 9%;
+}
+
+
+#txt_input {
+    margin-left: -43px;
+    -moz-appearance: textarea-multiline;
+    -webkit-appearance: textarea;
+    border: 1px solid gray;
+    font: medium -moz-fixed;
+    font: -webkit-small-control;
+    height: 200px;
+    overflow: auto;
+    padding: 2px;
+    resize: both;
+    width: 350px;
+    background-color: white;
+    color: #000;
+    border-radius: 10px;
+    font-weight: bold;
 }
 

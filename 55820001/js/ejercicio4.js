@@ -29,11 +29,12 @@ function countCourse(course_characters){
 function press(){
     suma = note1 + note2  + note3 
     promedio = suma/3
+    
     if(promedio < 3){
-        console.log(document.getElementById("character_num").innerHTML = "Lo siento "+ namee+ ",su nota es "+ promedio.toFixed(2)+ ",NO pasaste la materia "+ course );
+        console.log(document.getElementById("character_num").innerHTML = "Lo siento "+ namee+ ", " + '<span style="color: red"> su nota es </span>' + promedio.toFixed(2)+ ", NO pasaste la materia "+ course );
     }
     else if(promedio >= 3) {
-        console.log(document.getElementById("character_num").innerHTML = "Felicitaciones "+ namee+ ",su nota es "+ promedio.toFixed(2)+ ",Pasaste la materia "+ course );
+        console.log(document.getElementById("character_num").innerHTML = "Felicitaciones "+ namee+ ", " + '<span style="color: green"> su nota es </span>' + promedio.toFixed(2)+ ", Pasaste la materia "+ course );
     }
     else{
         console.log(document.getElementById("character_num").innerHTML = "Ingrese valores validos ");

@@ -1,8 +1,4 @@
-*{
-  
-    background-color: bisque;
-   
-}  
+
 
 .txtVista{
 margin-top: 5%;
@@ -12,16 +8,18 @@ background-color: #eee;
 font-weight: bold;
 border-radius: 10px;
 font-size: 20px;
-width: 19%;
-
+width: 29%;
+margin-left:-5% ;
 }
 
 body{
-    margin-left: 40%;   
+    margin-left: 40%;  
+    background: #27282e; 
 }
 
 h3{
     margin-left: -3%;
+    color: #eee;
 }
 .button_add{
     margin-left: 9%;
@@ -29,4 +27,5 @@ h3{
 
 h2{
     margin-left: -9%;
+    color: #eee;
 }

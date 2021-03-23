@@ -8,8 +8,6 @@
 
 <body>
 
-    
-    
     <nav class="navegation">
         <ul class="list_inline">
 
@@ -22,19 +20,20 @@
 
         <div class="text_box">
             <h3 class="title">Ingrese los numeros separados por comas</h3>
-            <textarea  name="message" onkeyup="countChars(this);" id="text" cols="30" rows="3"></textarea>
+            <p><textarea type="submit" name="numeros" id="input" cols="30" rows="3"></textarea></p>
         </div>
 
         <div class="button_add">
-            <button  onclick="press(this)" id="button_add">Revisar</button>
+            <p><button  value="Calcular" id="submit" onclick="test(input)">Revisar </button></p>
         </div>
 
 
         <div>
-            <p class="txtVista" id="character_num"> TIPO: </p>
+            <p id="output" class="txtVista" name="salida" contentEditable="true"> TIPO: </p>
         </div>
 
     </div>
+
     <script src="js/ejercicio8.js"></script>
 </body>
 

@@ -9,19 +9,30 @@ function countChars(num_characters){
 
 
 function press(){
-     if(numcharacters <0 ){
-        console.log(document.getElementById("character_num").innerHTML = "Debe ingresar numeros positivos")
-    }
-    else if(numcharacters %2==0  & numcharacters >=0){
-        console.log(document.getElementById("character_num").innerHTML = "Par")
-    }
-    else if(numcharacters %2==1 & numcharacters >=0 ){
-        console.log(document.getElementById("character_num").innerHTML = "Impar")
+
+    if(numcharacters <0 && numcharacters % 1 == 0 == false ){
+        console.log(document.getElementById("character_num").innerHTML = "Debe ingresar numeros enteros positivos")
     }
     else{
-    console.log(document.getElementById("character_num").innerHTML = "Debe ingresar numeros enteros")
+        if(numcharacters <0 ){
+            console.log(document.getElementById("character_num").innerHTML = "Debe ingresar numeros positivos")
+        }
+        else{
+            if(numcharacters % 1 == 0 == false ){
+                console.log(document.getElementById("character_num").innerHTML = "Debe ingresar numeros enteros")
+            }
+            else{
+                if(numcharacters %2==0  & numcharacters >=0){
+                    console.log(document.getElementById("character_num").innerHTML = "Par")
+                }
+                else{
+                    console.log(document.getElementById("character_num").innerHTML = "Impar")
+                }
+            }
+        }
     }
+    
 
 }
-     
+
 

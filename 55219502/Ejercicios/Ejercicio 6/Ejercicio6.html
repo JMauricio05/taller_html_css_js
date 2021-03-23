@@ -2,18 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ejercicio 1</title>
+    <title>Ejercicio 6</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../Ejercicio 1/ejercicio1.css">
+    <link rel="stylesheet" href="../Ejercicio 6/Ejercicio6.css">
 </head>
 <body class="body"> 
-    <h1>Contador de caracteres de un texto</h1>
+    <h1>Contador </h1>
     <br>
     <div class="container">
         <div class="mb-3">
-            <label for="txt" class="form-label " style="padding-bottom: 5px ;">Digite el texto </label>
-            <input type="email" class="form-control" id="txt" placeholder="Texto">
+            <label for="letra" class="form-label " style="padding-bottom: 5px ;">Digite una letra</label>
+            <input type="text" class="form-control" id="letra" placeholder="letra">
+        </div>
+        <div class="mb-3">
+            <label for=parrafo class="form-label " style="padding-bottom: 5px ;">Digite un parrafo</label>
+            <input type="text" class="form-control" id="parrafo" placeholder="parrafo">
         </div>
         <div class="row justify-content-center">
             <div class="col-12 text-center">
@@ -25,31 +29,17 @@
     <div id="modalPromedio" class="modalContent modalClosed">
         <div class="container-fluid">
             <button type="button" class="btn-close" aria-label="Close" onclick="closeModal('modalPromedio')"></button>
-            <div class="row">
-                <h2 class="col-12 text-center">Cantidad de caracteres</h2>
+            <div class="row" id="res">
+                <h2 class="col-12 text-center" id="carac">Edad </h2>
             </div>
-            <br>
-            <div class="row justify-content-center">
-                <div class="col-8 text-center">
-                    La cantidad de caracteres es:
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div id="carac" class="col-8 text-center">
-                    0
-                </div>
-            </div>
-            <br>
             <div class="row justify-content-center">
                 <div class="col-4 text-center">
                     <button  type="button" class="btn btn-success" onclick="closeModal('modalPromedio')">Aceptar</button>
                 </div>
             </div>
         </div>
-        <img src="..." class="rounded float-start" alt="...">
-        <img src="..." class="rounded float-end" alt="...">
     </div>
 
-    <script src="../Ejercicio 1/Ejercicio1.js"> </script>
+    <script src="../Ejercicio 6/Ejercicio6.js"> </script>
 </body>
 </html>

@@ -24,8 +24,6 @@ function identificarParImpar(){
     let listaNumeros = document.getElementById('nombreInput').value+',';
     let numeros = "";
 
-    let numPares = [];
-    let numImpares = [];
     for(let i=0; i<listaNumeros.length ;i++){
         if(listaNumeros[i]!=","){
             numeros+=listaNumeros[i];
@@ -34,17 +32,17 @@ function identificarParImpar(){
             let error = errores(numeros);
             if(error){
                 if(numeros%2==0){
-                    numPares.push(numeros);
+                    let numPares = numeros;
                     
                     document.getElementById('resultadoLista').innerHTML+= '<h6 class = "par">'+numPares+' es numero par</h6>';
                 }else{
-                    numImpares.push(numeros);
+                    let numImpares = numeros;
                     
                     document.getElementById('resultadoLista').innerHTML+= '<h6 class = "impar">'+numImpares+" es numero impar</h6>";
                 }
             }
-            numImpares = [];
-            numPares = [];
+            numImpares = '';
+            numPares = '';
             numeros = '';
             
         }

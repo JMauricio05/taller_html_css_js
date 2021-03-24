@@ -12,13 +12,16 @@ document.getElementById('btnInicio').addEventListener('click', function () {
     document.getElementById('modalPromedio').classList.remove('modalClosed');
     let esPar = 0;
     let numV = false;
-    let imprimir = "";
+    let imprimirP = "";
+    let imprimirI = "";
+    let imprimirX = "";
     for (let i = 0; i < arrayNumeros.length; i++) {
         
         esPar = Number (arrayNumeros[i]) % 2;
 
         if (Number (arrayNumeros[i]) < 0) {
-            imprimir+= "\n*"+arrayNumeros[i]+" No es un Número entero positivo";
+            imprimirX+= "\n*"+arrayNumeros[i]+" No es un Número entero positivo";
+            document.getElementById('Resul_numerosX').style.color="red"
         }else{
             if (Number.isInteger(Number (arrayNumeros[i]))) {
                 numV=true;
@@ -27,17 +30,22 @@ document.getElementById('btnInicio').addEventListener('click', function () {
             }
             if (numV == true) {
                 if (esPar == 0) {
-                    imprimir+= "\n*"+arrayNumeros[i]+" Es número Par";
+                    imprimirP+= "\n*"+arrayNumeros[i]+" Es número Par";
+                    document.getElementById('Resul_numerosP').style.color="blue";
                 } else {
-                    imprimir+= "\n*"+arrayNumeros[i]+" Es número Impar";
+                    imprimirI+= "\n*"+arrayNumeros[i]+" Es número Impar";
+                    document.getElementById('Resul_numerosI').style.color="green";
                 }
             }else{
-                imprimir+= "\n*"+arrayNumeros[i]+" No es un Número entero";
+                imprimirX+= "\n*"+arrayNumeros[i]+" No es un Número entero";
+                document.getElementById('Resul_numerosX').style.color="red";
             }
     
         }
         
     }
-    document.getElementById('Resul_numeros').value=imprimir;
+    document.getElementById('Resul_numerosP').value=imprimirP;
+    document.getElementById('Resul_numerosI').value=imprimirI;
+    document.getElementById('Resul_numerosX').value=imprimirX;
 });
 

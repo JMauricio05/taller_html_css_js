@@ -112,20 +112,24 @@ document.getElementById('btnCalcular').addEventListener('click', function () {
 });
 document.getElementById('btnCalcularpromedio').addEventListener('click', function () {
     let promedio = 0;
+    let promedioP = "";
     let i = Number (document.getElementById('escoje').value) - 1 ;
     promedio= personas[i].nota1 + personas[i].nota2 + personas[i].nota3;
     console.log(promedio);   
 
     promedio=promedio/3;
     console.log(promedio);
+    promedioP = " su nota es: " + promedio;
     if (promedio >= 3) {
-        let promedioP =" su nota es " + promedio;
-        promedioP.style.color= 'green'
-        document.getElementById('Resul_promedio').value="Felicitaciones "+ personas[i].nombre + promedioP  + 
+        document.getElementById('Resul_promedio').style.color="green";
+        document.getElementById('Resul_promedio').value="Felicitaciones "+ personas[i].nombre + promedioP + 
         " \npasaste la materia "+ personas[i].materia;
-    } else {
-        document.getElementById('Resul_promedio').value="Lo siento "+ personas[i].nombre+ " su nota es " + promedio + 
+    } else if (promedio < 3) { 
+        document.getElementById('Resul_promedio').style.color="red";
+        document.getElementById('Resul_promedio').value="Lo siento "+ personas[i].nombre + promedioP + 
         " \nNo pasaste la materia "+ personas[i].materia;  
+    }else{
+        document.getElementById('Resul_promedio').value="Ingrese valores validos"
     }
     
 

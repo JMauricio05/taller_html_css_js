@@ -9,7 +9,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <script>
+    <div>
+        <h2 class="head">Calculadora de Notas</h2>
+    </div>
+    
+    <div>
+        <h3 class="titulo">Ingrese el nombre:</h3>
+    </div>
+    <div>
+        <textarea class="text" name="caracter" onkeyup="tipocaracter(this)" id="caracter" cols="40" rows="0"></textarea>
+    </div>
+    <div>
+        <h3 class="titulo">Ingrese la materia:</h3>
+    </div>
+    <div>
+        <textarea class="text" name="caracter" onkeyup="tipomateria(this)" id="caracter" cols="40" rows="0"></textarea>
+    </div>
+    <div>
+        <h3 class="titulo">Ingrese nota 1:</h3>
+    </div>
+    <div>
+        <textarea class="text" name="caracter" onkeyup="tiponota1(this)" id="caracter" cols="40" rows="0"></textarea>
+    </div>
+    <div>
+    <div>
+        <h3 class="titulo">Ingrese nota 2:</h3>
+    </div>
+    <div>
+        <textarea class="text" name="caracter" onkeyup="tiponota2(this)" id="caracter" cols="40" rows="0"></textarea>
+    </div>
+    <div>
+
+    <div>
+        <h3 class="titulo">Ingrese nota 3:</h3>
+    </div>
+    <div>
+        <textarea class="text" name="caracter" onkeyup="tiponota3(this)" id="caracter" cols="40" rows="0"></textarea>
+    </div>
+    <div>
+        <button class ="boton" id="Ing" onclick="Boton(this)">Ingresar</button>
+    </div>
+    <div>
+        <p class="box" id="boxx"></p>
+    </div>
+   <script>
         let nombre
         let materia
         let nota1
@@ -17,21 +60,35 @@
         let nota3
         let notafinal
         let suma
-
-        nombre=prompt("introduzca su nombre:")
-        materia=prompt("introduzca su materia:")
-        nota1=prompt("introduzca su nota:")
-        nota2=prompt("introduzca su nota:")
-        nota3=prompt("introduzca su nota:")
         
-        suma = parseFloat(nota1) +parseFloat(nota2) + parseFloat(nota3)
+function Boton() {
+    suma = parseFloat(nota1) +parseFloat(nota2) + parseFloat(nota3)
         notafinal = suma/3 
         if(notafinal < 3){
-            document.write("Lo siento "+ nombre+ " su nota es "+ notafinal + ", no pasaste la materia de " + materia);
+            document.getElementById("boxx").innerHTML=("Lo siento "+ nombre+ " su nota es "+ notafinal.toFixed(2) + ", no pasaste la materia de " + materia);
         }
         if(notafinal >= 3 ){
-            document.write("Felicitaciones "+ nombre + " su nota es "+ notafinal + ", pasaste la materia de " + materia);
+            document.getElementById("boxx").innerHTML=("Felicitaciones "+ nombre + " su nota es "+ notafinal.toFixed(2) + ", pasaste la materia de " + materia);
          }
+}
+
+function tipocaracter(nom) {
+    nombre=nom.value;
+}
+
+function tipomateria(mat) {
+    materia=mat.value;
+}
+function tiponota1(n1) {
+    nota1=n1.value;
+}
+function tiponota2(n2) {
+    nota2=n2.value;
+}
+function tiponota3(n3) {
+    nota3=n3.value;
+}
+
     </script>
 </body>
 </html>

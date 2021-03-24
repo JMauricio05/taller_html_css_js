@@ -1,27 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width-device-width, initial-scale-1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
     <title>Ejercicio 5</title>
 </head>
+
 <body>
+
+    <h3 class="titulo">Ingrese un número: </h3>
+
+    <div>
+        <textarea class="text" name="caracter" onkeyup="tipocaracter(this)" id="numero" cols="40" rows="0"></textarea>
+    </div>
+
+    <div class="boton">
+        <button id="Ing" onclick="Boton(this)">Ingresar</button>
+    </div>
+
+    <div>
+        <p class="box" id="boxx"></p>
+    </div>
+
     <script>
         let numero;
         let numentero;
         let numpositivo;
         let numentpos;
-        numero=prompt("introduzca un número")
-        
-        if(numero % 2 == 0){
-            document.write("El número " + numero +" Es Par");   
-        }else{
-            document.write("El número " + numero +" Es Impar");
+
+
+        function tipocaracter(numeroid) {
+            numero = numeroid.value;
+
         }
-        
+
+        function Boton() {
+
+
+            if (numero < 0 && numero % 1 == 0 == false) {
+                console.log(document.getElementById("boxx").innerHTML = "Debe ingresar numeros enteros positivos")
+            }
+            else { if (numero < 0) {
+                 console.log(document.getElementById("boxx").innerHTML = "Debe ingresar numeros positivos")
+            }
+            else {if (numero % 1 == 0 == false) {
+                console.log(document.getElementById("boxx").innerHTML = "Debe ingresar numeros enteros")
+            }
+            else { if (numero % 2 == 0 & numero >= 0) {
+                console.log(document.getElementById("boxx").innerHTML = "Par")
+            }
+            else {console.log(document.getElementById("boxx").innerHTML = "Impar")
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+
     </script>
 </body>
+
 </html>

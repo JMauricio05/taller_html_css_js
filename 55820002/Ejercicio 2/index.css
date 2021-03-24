@@ -1,9 +1,24 @@
 body{
-    display: flex;
-    
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    font-size: 56px;
+     background-color:lightgoldenrodyellow;
+
+}
+.titulo{
+    margin-left: 35%;
+    margin-top: 5%;
+}
+
+.box{
+    margin-left: 35%;
+    margin-top: 3%;
+}
+
+.boton{
+    margin-right: 35%;
+    float:right;
+    margin-top: -4%;
+}
+ 
+.text{
+    margin-left: 35%;
+    margin-top: 10%;
 }

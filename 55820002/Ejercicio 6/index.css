@@ -20,5 +20,15 @@ body{
 
 .text{
    margin-left: 35%;
-   margin-top: 3%;
+   margin-top: 5%;
+}
+
+.texto{
+    width: 100px;
+    border-top-color: black;
+    background-color:white;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-left: 35%;
+   margin-top: 5%;
 }

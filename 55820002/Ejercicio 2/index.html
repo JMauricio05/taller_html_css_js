@@ -8,19 +8,36 @@
     <link rel="stylesheet" href="index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
-    <script>
-        let caracter;
-        
-        caracter=prompt("introduzca un número ó caracter")
-        
-        if(caracter >= 0 | caracter < 0){
-            document.write(caracter +" Es un número");   
-        }else{
-            document.write(caracter +" es un texto");
 
+<body>
+    <h3 class="titulo">Ingrese un texto ó número: </h3>
+    
+    <div>
+        <textarea class="text" name="caracter" onkeyup="tipocaracter(this)" id="caracter" cols="40" rows="0"></textarea>
+    </div>
+    <div  class="boton">
+        <button id="Ing" onclick="Boton(this)">Ingresar</button>
+    </div>
+    
+    <div>
+        <p class="box" id="boxx"> </p>
+    </div>
+    
+    <script>
+        
+        let caracter;
+        function tipocaracter(caracterid){
+            caracter=caracterid.value;
+            
         }
-        
-        
+        function Boton(){
+            if(caracter >= 0 | caracter < 0){
+                document.getElementById("boxx").innerHTML=(caracter +" Es un número");   
+            }else{
+                document.getElementById("boxx").innerHTML=(caracter +" es un texto");
+        }
+        }
+
+
     </script>
 </body>

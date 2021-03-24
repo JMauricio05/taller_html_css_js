@@ -9,25 +9,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+    <div>
+        <H3 class="titulo">Ingresar nombre: </H3>
+    </div>
+    <div>
+        <textarea class="text" name="nombre" onkeyup="Nombrefun(this)" id="nombre" cols="0" rows="0"></textarea>
+    </div>
+    <div>
+        <H3 class="titulo">Ingresar edad: </H3>
+    </div>
+    <div>
+        <textarea class="text" name="caracter" onkeyup="tipocaracter(this)" id="caracter" cols="0" rows="0"></textarea>
+    </div>
+    <div>
+    <button class="boton" id="Ing" onclick="Boton(this)">Ingresar</button>
+    </div>
+    
+    <div>
+        <p class="box" id="boxx"></p>
+    </div>
+
     <script>
+        
+        
+        let caracter;
         let nombre;
-        let edad;
-        
-        nombre=prompt("introduzca su nombre:")
-        edad=prompt("introduzca su edad:")
-        
-        if(edad <= 0){
-            document.write("No es una edad valida");
+        function tipocaracter(caracterid){
+            caracter=caracterid.value;
+            
         }
-        else if(edad >= 18 & edad >= 0){
-            document.write("Hola "+ nombre +", Eres mayor de edad");   
-        }else if(edad < 18){
-            document.write("Hola "+ nombre +", No eres mayor de edad");
+        function Nombrefun(nomid){ nombre=nomid.value}
+        function Boton(){
+         if(caracter <= 0){
+            document.getElementById("boxx").innerHTML=("No es una edad valida");
+        }
+        else if(caracter >= 18 & caracter >= 0){
+            document.getElementById("boxx").innerHTML=("Hola "+ nombre +", Eres mayor de edad");   
+        }else if(caracter < 18){
+            document.getElementById("boxx").innerHTML=("Hola "+ nombre +", No eres mayor de edad");
 
         }
+        }
+
         
-        
-        
+
     </script>
+    
+ 
+
+    
 </body>
 </html>

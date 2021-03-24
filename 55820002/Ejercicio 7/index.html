@@ -1,38 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    
-    <title>Ejercicio 7</title>
+    <title>ejercicio 7</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale-1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-
 </head>
-<body>
-    <script>
-        let numero1;
-        let numero2;
 
-        numero1 = parseInt(prompt('Introduzca el primer número'));
-        numero2 = parseInt(prompt('Introduzca el segundo número'));
-        let respuesta = numero1 / numero2;
-        parseInt(respuesta);
-        
-        if (numero2 == 0)
-        {
-            document.write('error');
+<body>
+    
+    <h2 class="title">Calculadora De Números Divisibles:</h2>
+
+    <div class="container">
+
+        <div class="text_box">
+            <h3 class="title">Ingrese el número 1:</h3>
+            <textarea name="message" onkeyup="tipoNum1(this);" id="text" cols="30" rows="3"></textarea>
+        </div>
+
+        <div class="text_box">
+            <h3 class="title">Ingrese el número 2:</h3>
+            <textarea name="message" onkeyup="tipoNum2(this);" id="text" cols="30" rows="3"></textarea>
+        </div>
+
+        <div class="button_add">
+            <button onclick="press(this)" id="button_add">Revisar</button>
+        </div>
+
+
+        <div>
+            <p class="box" id="boxx"></p>
+        </div>
+
+    </div>
+    <script>
+        function tipoNum1(numero1_character) {
+            numero1 = numero1_character.value;
         }
-        else
-        {
-            document.write('La division es: ' + respuesta);
+
+
+        function tipoNum2(numero2_characters) {
+            numero2 = numero2_characters.value;
         }
-        if (numero1 == 18 & numero2 == 5)
-        {
-            document.write('el numero ' + numero1 + ' no es divisible entre el numero ' + numero2);
+
+
+        function press() {
+
+            if (numero1 < 0) {
+                console.log(document.getElementById("boxx").innerHTML = "El numero " + numero1 + " No es positivo ");
+            }
+            else {
+                if (numero2 < 0) {
+                    console.log(document.getElementById("boxx").innerHTML = "El numero " + numero2 + " No es positivo ");
+                }
+                else {
+                    if (numero1 % 1 == 0) {
+                        if (numero2 % 1 == 0) {
+                            if (numero1 % numero2 === 0) {
+                                console.log(document.getElementById("boxx").innerHTML = "El numero " + numero1 + " es divisible por el numero " + numero2);
+                            }
+                            else {
+                                console.log(document.getElementById("boxx").innerHTML = "El numero " + numero1 + " No es divisible por el numero " + numero2);
+                            }
+                        }
+                        else {
+                            console.log(document.getElementById("boxx").innerHTML = "El numero " + numero2 + " No es entero ");
+                        }
+                    }
+                    else {
+                        console.log(document.getElementById("boxx").innerHTML = "El numero " + numero1 + " No es entero ");
+                    }
+                }
+            }
         }
     </script>
-    
 </body>
+
+
 </html>

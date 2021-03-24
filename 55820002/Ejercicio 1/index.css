@@ -3,6 +3,7 @@ body{
     height: 100vh;
     flex-direction: row;
     align-items: center;
+    background-color:lightgoldenrodyellow;
     justify-content: center;
     overflow: hidden;
 }

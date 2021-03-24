@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ejercicio 6</title>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div>
+        <H3 class="titulo">Ingresar texto: </H3>
+    </div>
+    <div>
+        <div class="texto" id="txt_input" name="texto"  contentEditable="true" style="width: calc(20% - 30px);text-align: left;"></div>
+    </div>
+    <div>
+        <H3 class="titulo">Ingresar letra a buscar: </H3>
+    </div >
+    <div>
+        <textarea class="text" name="caracter" onkeyup="tipocaracter(this)" id="caracter" cols="0" rows="0"></textarea>
+    </div>
+    <div>
+        <button class="boton" id="Ing" onclick="Boton(this)">Ingresar</button>
+    </div>
+
+    <div>
+        <p class="box" id="boxx"></p>
+    </div>
+</body>
+<script>
+    let palabra;
+    let buscar;
+    let buscado;
+
+    function Boton(){
+        var textAreaB = document.getElementById("txt_input");
+        textAreaB.innerHTML = buscado;
+
+    }
+
+    function tipocaracter(text_buscar) {
+
+        palabra = document.getElementById('txt_input').textContent;
+
+        buscar = text_buscar.value;
+
+        buscado = palabra.replaceAll(buscar, '<span style="color: orange">$&</span>');
+
+
+        
+
+    }
+
+</script>
+
+
+</html>

@@ -1,32 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+    <title>ejercicio 8</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale-1.0">
-    <title>Ejercicio 8 sin terminar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    <script>
-        let numero;
-        let numentero;
-        let numpositivo;
-        let numentpos;
-        numero=prompt("introduzca un número")
-        
-        if(numero % 2 == 0){
-            document.write("El número " + numero +" Es Par");   
-        }else{
-            document.write("El número " + numero +" Es Impar");
+
+    <div class="container">
+
+        <div class="text_box">
+            <h3 class="title">Ingrese los numeros: </h3>
+            <p><textarea type="submit" name="numeros" id="input" cols="30" rows="3"></textarea></p>
+        </div>
+
+        <div class="button_add">
+            <p><button  value="Calcular" id="submit" onclick="Boton(input)">Revisar </button></p>
+        </div>
+
+
+        <div>
+            <p id="output" class="txtVista" name="salida" contentEditable="true"></p>
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+
+        function Boton(ini) {
+            txt1 = ini.value;
+            txt2 = ""
+
+            var nopar = txt1.split(",");
+
+
+            for (var i = 0; i < nopar.length; i++) {
+                var num = nopar[i];
+
+                if (Number.isInteger(parseFloat(num))) {
+
+                    if (parseInt(num) % 2 == 0) {
+                        txt2 =
+                            txt2 + num + '  es numero par '
+                    } else {
+                        txt2 =
+                            txt2 + num + ' es numero impar ' ;
+                    }
+                } else {
+                    txt2 =
+                        txt2 +
+                        num +
+                        ' no es un numero entero ';
+                }
+
+                txt2 = txt2 + "<br>";
+            }
+
+
+            var textRes = document.getElementById("output");
+            textRes.innerHTML = txt2;
         }
-        if(numero =parseFloat){
-            document.write(numero +" Debe ingresar números enteros");
-        }
-        if(numero  =- ){
-            document.write(numero +" Debe ingresar números positivos");
-        }
-        if(numero  = ){
-            document.write(numero +" Debe ingresar números enteros");
-        }
+
     </script>
 </body>
+
 </html>

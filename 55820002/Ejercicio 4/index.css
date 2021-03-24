@@ -1,8 +1,26 @@
 body{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    font-size: 26px;
+    background-color:lightgoldenrodyellow;
 }
+
+.titulo{
+   margin-left: 15%;
+   margin-top: 3%;
+}
+
+.box{
+   margin-left: 15%;
+   margin-top: 3%;
+}
+
+.boton{
+   margin-right: 55%;
+   float:right;
+   margin-top: -4%;
+}
+
+.text{
+   margin-left: 15%;
+   margin-top: 3%;
+}
+
+
